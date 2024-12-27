@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigo Secreto Cristinhos</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #ff6400 0%, #3d1801 100%);
+        color: #FFE4C4;
+    }
+
+    .container {
+        background-color: rgba(61, 24, 1, 0.7);
+        backdrop-filter: blur(10px);
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        max-width: 600px;
+        width: 90%;
+        margin: 0;
+        border: 1px solid rgba(255, 100, 0, 0.3);
+        color: #FFE4C4;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        color: #FFE4C4;
+    }
+
+    .reveal-box {
+        background: linear-gradient(145deg, #5c2401, #3d1801);
+        padding: 2rem;
+        border-radius: 15px;
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        color: #FFE4C4;
+    }
+
+    .participant {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        background: rgba(255, 100, 0, 0.2);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        color: #FFE4C4;
+    }
+
+    .hidden-participant {
+        opacity: 0;
+        transform: translateY(20px);
+        position: relative;
+        color: #FFE4C4;
+    }
+
+    .arrow {
+        color: #ff6400;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .message {
+        /* font-style: italic; */
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #FFE4C4;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .message b {
+        font-size: 1.2rem;
+    }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h2 style="color: #FFE4C4;">🍫 Amigo Chocolate Cristinhooooos 🍫</h2>
+
+    <p class="message">
+      Eai <b>{{NOME}}</b>! 
+      <br />
+      <br />
+      Bem vindo ao amigo chocolate cristinhos de última hora na nossa única chance da vida e talvez até desse ano todo de conhecer a famigerada casa do nosso amigo Léo Stronda
+      <br />
+      <br />
+      Veja abaixo quem você pegou!
+    </p>
+
+    <div class="reveal-box" id="revealBox">
+      <div class="arrow">⬇️</div>
+      <div class="participant">🎁 {{ESCOLHIDO}} 🎁</div>
+  </div>
+
+    <p class="message" style="font-style: italic;">
+      Lembre-se: mantenha o segredo até o dia da revelação!
+    </p>
+  </div>
+</body>
+
+</html>
